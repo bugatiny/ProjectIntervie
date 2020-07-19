@@ -44,10 +44,10 @@ public class MutsiAndOutlander {
         Thread.sleep(2000);
 
         driver.findElement(By.id("optOut")).click();
-        Thread.sleep(6000);
+        Thread.sleep(5000);
 
         driver.findElement(By.xpath("//label[@for='variant-universal']")).click();
-        Thread.sleep(6000);
+        Thread.sleep(5000);
 
         String kwExpected = driver.findElement(By.xpath("//label[@for='model-S7']//h4[1]")).getText();
         Assertions.assertEquals(kwExpected, kwActual);
@@ -108,7 +108,7 @@ public class MutsiAndOutlander {
 
         } else if (compatibleProduct.equalsIgnoreCase("Key lock")) {
             String sum = key_lock + totalPriceBottomLeft;
-            System.out.println("Universal Socket (7kW)" + compatibleProduct +  sum);
+            System.out.println("Universal Socket (7kW)" + compatibleProduct + sum);
 
         }
 
